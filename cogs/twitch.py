@@ -61,9 +61,7 @@ class Twitch(Cog):
                     embed.add_field(name="\u200b", value=stream_msg, inline=False)
 
                 await ctx.send(embed=embed)
-                await asyncio.sleep(
-                    1
-                )  # Adding a 1 second delay between messages to avoid rate limits
+                await asyncio.sleep(1)
 
             logger.info("---")
             logger.info(streamers)
